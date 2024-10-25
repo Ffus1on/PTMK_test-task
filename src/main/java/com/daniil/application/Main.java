@@ -44,6 +44,7 @@ public class Main {
             case "5":
                 EmployeeDao getExecutionTimeEmployeeDao = new EmployeeDao();
                 getExecutionTimeEmployeeDao.displayExecutionTime();
+                break;
         }
     }
 }
