@@ -8,7 +8,7 @@ DECLARE
 BEGIN
     start_time := clock_timestamp();
 
-    PERFORM * FROM employees WHERE sex = 'Male' AND fullname LIKE 'F%';
+    PERFORM * FROM employees WHERE sex = 'Male' AND fullname >= 'F' AND fullname < 'G';
 
     end_time := clock_timestamp();
     elapsed_time := end_time - start_time;
